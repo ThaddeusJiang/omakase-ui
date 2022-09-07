@@ -11,6 +11,7 @@
   "dependencies": {
     "@omakase-ui/react-table": "^0.1.1",
     "@omakase-ui/responsive-design-mode": "^0.0.1",
+    "@omakase-ui/editor-layout": "^0.0.1",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"

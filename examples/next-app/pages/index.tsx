@@ -15,6 +15,10 @@ const Home: NextPage = () => {
       name: '@omakase-ui/responsive-design-mode',
       url: '/responsive-design-mode',
     },
+    {
+      name: '@omakase-ui/editor-layout',
+      url: '/editor-layout',
+    },
   ]
 
   return (
