@@ -1,4 +1,4 @@
-# @thaddeusjiang/react-table
+# @omakase-ui/react-table
 
 React table component of Omakase UI.
 
@@ -10,7 +10,7 @@ React table component of Omakase UI.
 ## Install
 
 ```bash
-yarn add @thaddeusjiang/react-table
+yarn add @omakase-ui/react-table
 ```
 
 ## Development

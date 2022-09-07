@@ -1,4 +1,4 @@
-import { DataTable } from "@thaddeusjiang/react-table";
+import { DataTable } from "@omakase-ui/react-table";
 import { useMemo } from "react";
 
 import { MockReactTableColumns, MockMembers } from "../../../mocks/members";

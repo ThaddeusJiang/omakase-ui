@@ -1,8 +1,14 @@
 {
+  "name": "omakase-ui",
+  "version": "0.0.1",
+  "license": "MIT",
   "private": true,
   "workspaces": [
-    "packages/*",
-    "examples/*"
+    "examples/*",
+    "packages/*"
   ],
+  "scripts": {
+    "next": "yarn --cwd examples/next-app dev"
+  },
   "packageManager": "yarn@3.2.1"
 }

@@ -8,9 +8,13 @@ const Home: NextPage = () => {
 
   const components = [
     {
-      name: 'React-Table',
+      name: '@omakase-ui/react-table',
       url: '/react-table',
-    }
+    },
+    {
+      name: '@omakase-ui/responsive-design-mode',
+      url: '/responsive-design-mode',
+    },
   ]
 
   return (
