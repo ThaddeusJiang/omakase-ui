@@ -19,6 +19,10 @@ const Home: NextPage = () => {
       name: '@omakase-ui/editor-layout',
       url: '/editor-layout',
     },
+    {
+      name: '@omakase-ui/react-sortable-list',
+      url: '/react-sortable-list',
+    },
   ]
 
   return (

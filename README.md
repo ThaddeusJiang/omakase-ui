@@ -9,7 +9,7 @@
 - [x] [@omakase-ui/responsive-design-mode](./packages/responsive-design-mode/README.md)
 - [x] [@omakase-ui/react-table](./packages/react-table/README.md)
 - [x] [@omakase-ui/editor-layout](./packages/editor-layout/README.md)
-- [x] [@thaddeusjiang/react-sortable-list](https://github.com/ThaddeusJiang/react-sortable-list)
+- [x] [@omakase-ui/react-sortable-list](./packages/react-sortable-list/README.md)
 - [ ] [@thaddeusjiang/react-advanced-table](https://github.com/ThaddeusJiang/react-advanced-table)
 - [ ] [react-organization-simulator]()
 - [ ] [react-form-maker]()
