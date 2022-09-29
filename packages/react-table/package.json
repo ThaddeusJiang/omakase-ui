@@ -1,7 +1,7 @@
 {
   "name": "@omakase-ui/react-table",
   "author": "Thaddeus Jiang",
-  "version": "0.1.4-rc.1",
+  "version": "0.1.4",
   "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
