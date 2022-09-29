@@ -14,3 +14,9 @@ export const TextTable = () => {
     <DataTable columns={columns} data={MockMembers} sort={['name', 'asc']} />
   );
 };
+
+export const EmptyTable = () => {
+  const columns = useMemo(() => MockReactTableColumns, []);
+
+  return <DataTable columns={columns} data={[]} sort={['name', 'asc']} />;
+};

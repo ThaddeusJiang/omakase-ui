@@ -1,28 +1,43 @@
-import React, { FC, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import {
-  useTable,
-  usePagination,
-  useResizeColumns,
   Column,
   useFlexLayout,
+  usePagination,
+  useResizeColumns,
+  useTable,
 } from 'react-table';
-import classNames from 'classnames';
-import '../../tailwind.css';
 
-const DefaultCell = ({ value }: { value: string | number }) => (
-  <div>{value || '----'}</div>
-);
+import classNames from 'classnames';
 
 type Sort = [string, 'asc' | 'desc'];
 
-type Props = {
-  columns: Column<Record<string, unknown>>[];
-  data: Record<string, unknown>[];
+const DefaultCell = ({ value }: { value: string | number }) => (
+  <div>{value ?? '----'}</div>
+);
+
+const DefaultEmpty = () => (
+  <div className="w-full min-h-[200px] flex justify-center items-center text-gray-500">
+    Empty
+  </div>
+);
+
+type Props<T> = {
+  columns: Column<Record<string, T>>[];
+  data: T[];
   sort?: Sort;
   onSortChange?: (value: Sort) => void;
+  bodyClassName?: string;
+  Empty?: React.FC;
 };
 
-export const DataTable: FC<Props> = ({ columns, data, sort, onSortChange }) => {
+const DataTable = <T extends Record<string, any>>({
+  columns,
+  data,
+  sort,
+  onSortChange,
+  bodyClassName,
+  Empty,
+}: Props<T>) => {
   const defaultColumn = useMemo(
     () => ({
       // When using the useFlexLayout:
@@ -70,22 +85,24 @@ export const DataTable: FC<Props> = ({ columns, data, sort, onSortChange }) => {
   return (
     <div className="overflow-x-auto">
       {/* Table */}
-      <div className="align-middle inline-block min-w-full ">
+      <div className="border rounded align-middle inline-block min-w-full ">
         <div className="pt-px overflow-hidden ">
           <div {...getTableProps()} className="min-w-full">
-            <div className="border-b">
-              {headerGroups.map(headerGroup => (
+            <div className="border-b border-gray-200 bg-slate-50">
+              {headerGroups.map((headerGroup, index) => (
                 <div
                   {...headerGroup.getHeaderGroupProps()}
-                  key={headerGroup.id}
+                  key={`${index + 1}-${headerGroup.id}`}
                 >
                   {headerGroup.headers.map(column => (
                     <div
                       {...column.getHeaderProps()}
                       onClick={() => handleSortChange(column.id)}
                       key={column.id}
+                      role="button"
+                      tabIndex={0}
                     >
-                      <div className="flex w-full px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider hover:bg-gray-100">
+                      <div className="flex w-full px-6 py-3 text-left text-sm font-medium text-gray-500 capitalize tracking-wider hover:bg-gray-100">
                         <span>{column.render('Header')}</span>
                         {column.id === sort?.[0] && (
                           <span className="ml-2">
@@ -109,28 +126,39 @@ export const DataTable: FC<Props> = ({ columns, data, sort, onSortChange }) => {
               ))}
             </div>
 
-            <div {...getTableBodyProps()} className=" ">
-              {rows.map(row => {
-                prepareRow(row);
-                return (
-                  <div
-                    {...row.getRowProps()}
-                    key={row.id}
-                    role="row"
-                    className="border-b hover:bg-gray-100"
-                  >
-                    {row.cells.map((cell, index) => (
-                      <div
-                        {...cell.getCellProps()}
-                        key={index}
-                        className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 truncate "
-                      >
-                        {cell.render('Cell')}
-                      </div>
-                    ))}
-                  </div>
-                );
-              })}
+            <div
+              {...getTableBodyProps({ className: bodyClassName })}
+              className=" "
+            >
+              {rows.length === 0 ? (
+                Empty ? (
+                  <Empty />
+                ) : (
+                  <DefaultEmpty />
+                )
+              ) : (
+                rows.map(row => {
+                  prepareRow(row);
+                  return (
+                    <div
+                      {...row.getRowProps()}
+                      key={row.id}
+                      role="row"
+                      className="border-b last:border-b-0 hover:bg-gray-100"
+                    >
+                      {row.cells.map((cell, index) => (
+                        <div
+                          {...cell.getCellProps()}
+                          key={index}
+                          className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 truncate "
+                        >
+                          {cell.render('Cell')}
+                        </div>
+                      ))}
+                    </div>
+                  );
+                })
+              )}
             </div>
           </div>
         </div>
@@ -138,3 +166,5 @@ export const DataTable: FC<Props> = ({ columns, data, sort, onSortChange }) => {
     </div>
   );
 };
+
+export default DataTable;
