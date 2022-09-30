@@ -141,7 +141,6 @@ const DataTable = <T extends Record<string, any>>({
 
             <div
               {...getTableBodyProps({ className: bodyClassName })}
-              className=" "
             >
               {rows.length === 0 ? (
                 Empty ? (
