@@ -41,4 +41,53 @@ describe('components/DataTable', () => {
     });
     expect(onSortChange).toBeCalledTimes(1);
   });
+
+
+  test("should render column header & cell with custom className", () => {
+    const screen = render(<DataTable  columns={[
+      {
+        Header: "header",
+        accessor: "a",
+        className: "test"
+      }
+    ]} data={[
+      {a: "test"}
+    ]} />)
+    const headerCell = screen.getByRole("button")
+    expect(headerCell).toHaveClass("test")
+    const bodyCell = screen.getByRole("cell")
+    expect(bodyCell).toHaveClass("test")
+  })
+
+  test("should render column header with headerClassName", () => {
+    const screen = render(<DataTable  columns={[
+      {
+        Header: "header",
+        accessor: "a",
+        headerClassName: "test"
+      }
+    ]} data={[
+      {a: "test"}
+    ]} />)
+    const headerCell = screen.getByRole("button")
+    expect(headerCell).toHaveClass("test")
+    const bodyCell = screen.getByRole("cell")
+    expect(bodyCell).not.toHaveClass("test")
+  })
+
+  test("should render column cell with cellClassName", () => {
+    const screen = render(<DataTable  columns={[
+      {
+        Header: "header",
+        accessor: "a",
+        cellClassName: "test"
+      }
+    ]} data={[
+      {a: "test"}
+    ]} />)
+    const headerCell = screen.getByRole("button")
+    expect(headerCell).not.toHaveClass("test")
+    const bodyCell = screen.getByRole("cell")
+    expect(bodyCell).toHaveClass("test")
+  })
 });
