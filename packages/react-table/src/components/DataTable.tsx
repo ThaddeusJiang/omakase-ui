@@ -156,7 +156,7 @@ const DataTable = <T extends Record<string, any>>({
                       {...row.getRowProps()}
                       key={row.id}
                       role="row"
-                      className="border-b last:border-b-0 hover:bg-gray-100"
+                      className="border-b last:border-b-0 hover:bg-gray-100 group"
                     >
                       {row.cells.map((cell, index) => (
                         <div
