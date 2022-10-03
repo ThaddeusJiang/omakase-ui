@@ -2,6 +2,8 @@
 
 React table component of Omakase UI.
 
+[![npm (scoped)](https://img.shields.io/npm/v/@omakase-ui/react-table?style=for-the-badge)](https://www.npmjs.com/package/@omakase-ui/react-table)
+
 ## features
 
 - [x] out of box react table component
