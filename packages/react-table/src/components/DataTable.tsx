@@ -22,7 +22,11 @@ const DefaultEmpty = () => (
 );
 
 type Props<T> = {
-  columns: Column<Record<string, T>>[];
+  columns: (Column<Record<string, T>> & {
+    className?: string,
+    headerClassName?: string,
+    cellClassName?: string
+  })[];
   data: T[];
   sort?: Sort;
   onSortChange?: (value: Sort) => void;
@@ -96,7 +100,16 @@ const DataTable = <T extends Record<string, any>>({
                 >
                   {headerGroup.headers.map(column => (
                     <div
-                      {...column.getHeaderProps()}
+                      {...column.getHeaderProps({
+                        className: classNames(
+                          (
+                            column as unknown as { className?: string }
+                          )?.className,
+                          (
+                            column as unknown as { headerClassName?: string}
+                          )?.headerClassName
+                        )
+                      })}
                       onClick={() => handleSortChange(column.id)}
                       key={column.id}
                       role="button"
@@ -128,7 +141,6 @@ const DataTable = <T extends Record<string, any>>({
 
             <div
               {...getTableBodyProps({ className: bodyClassName })}
-              className=" "
             >
               {rows.length === 0 ? (
                 Empty ? (
@@ -148,9 +160,15 @@ const DataTable = <T extends Record<string, any>>({
                     >
                       {row.cells.map((cell, index) => (
                         <div
-                          {...cell.getCellProps()}
+                          {...cell.getCellProps({
+                            className: classNames("px-6 py-4 whitespace-nowrap text-sm text-gray-500 truncate", 
+                            (cell.column as unknown as { className?: string })
+                            ?.className,
+                            (cell.column as unknown as { cellClassName?: string })
+                            ?.cellClassName
+                            )
+                          })}
                           key={index}
-                          className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 truncate "
                         >
                           {cell.render('Cell')}
                         </div>
