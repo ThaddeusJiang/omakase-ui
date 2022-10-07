@@ -89,7 +89,7 @@ const DataTable = <T extends Record<string, any>>({
   return (
     <div className="overflow-x-auto">
       {/* Table */}
-      <div className="border rounded align-middle inline-block min-w-full ">
+      <div className="border rounded align-middle min-w-full ">
         <div className="pt-px overflow-hidden ">
           <div {...getTableProps()} className="min-w-full">
             <div className="border-b border-gray-200 bg-slate-50">
