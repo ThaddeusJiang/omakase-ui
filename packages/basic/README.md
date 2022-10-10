@@ -2,42 +2,42 @@
 
 - [@omakase-ui/basic](#omakase-uibasic)
   - [Common](#common)
-    - [✅Button](#button)
-    - [✅Icon](#icon)
+    - [Button](#button)
+    - [Icon](#icon)
     - [Typography](#typography)
   - [Layout](#layout)
-    - [✅Divider](#divider)
+    - [Divider](#divider)
     - [Grid](#grid)
     - [Layout](#layout-1)
     - [Space](#space)
   - [Navigation](#navigation)
     - [Affix](#affix)
     - [Breadcrumb](#breadcrumb)
-    - [✅Dropdown](#dropdown)
+    - [Dropdown](#dropdown)
     - [Menu](#menu)
     - [PageHeader](#pageheader)
-    - [✅Pagination](#pagination)
+    - [Pagination](#pagination)
     - [Steps](#steps)
   - [Data Entry](#data-entry)
     - [AutoComplete](#autocomplete)
     - [Cascader](#cascader)
-    - [✅Checkbox](#checkbox)
+    - [Checkbox](#checkbox)
     - [DatePicker](#datepicker)
     - [Form](#form)
-    - [✅Input](#input)
+    - [Input](#input)
     - [InputNumber](#inputnumber)
     - [Mentions](#mentions)
-    - [✅Radio](#radio)
+    - [Radio](#radio)
     - [Rate](#rate)
-    - [✅Select](#select)
+    - [Select](#select)
     - [Slider](#slider)
-    - [✅Switch](#switch)
-    - [✅TimePicker](#timepicker)
+    - [Switch](#switch)
+    - [TimePicker](#timepicker)
     - [❌Transfer](#transfer)
     - [TreeSelect](#treeselect)
     - [Upload](#upload)
   - [Data Display](#data-display)
-    - [✅Avatar](#avatar)
+    - [Avatar](#avatar)
     - [Badge](#badge)
     - [Calendar](#calendar)
     - [Card](#card)
@@ -55,13 +55,13 @@
     - [Tabs](#tabs)
     - [Tag](#tag)
     - [Timeline](#timeline)
-    - [✅Tooltip](#tooltip)
+    - [Tooltip](#tooltip)
     - [Tree](#tree)
   - [Feedback](#feedback)
     - [Alert](#alert)
     - [Drawer](#drawer)
-    - [✅Message](#message)
-    - [✅Modal](#modal)
+    - [Message](#message)
+    - [Modal](#modal)
     - [Notification](#notification)
     - [Popconfirm](#popconfirm)
     - [Progress](#progress)
@@ -73,17 +73,37 @@
     - [BackTop](#backtop)
     - [ConfigProvider](#configprovider)
   - [Mockup](#mockup)
-    - [✅Code](#code)
-    - [✅Phone](#phone)
-    - [✅Window](#window)
+    - [Code](#code)
+    - [Phone](#phone)
+    - [Window](#window)
+    -
+  - [Feedback](#feedback)
+    - [Alert](#alert)
+    - [Drawer](#drawer)
+    - [Message](#message)
+    - [Modal](#modal)
+    - [Notification](#notification)
+    - [Popconfirm](#popconfirm)
+    - [Progress](#progress)
+    - [Result](#result)
+    - [Skeleton](#skeleton)
+    - [Spin](#spin)
+  - [Other](#other)
+    - [Anchor](#anchor)
+    - [BackTop](#backtop)
+    - [ConfigProvider](#configprovider)
+  - [Mockup](#mockup)
+    - [Code](#code)
+    - [Phone](#phone)
+    - [Window](#window)
 
 ## Common
 
-### ✅Button
+### Button
 
 Recommend [daisyUI](https://daisyui.com/components/button/)
 
-### ✅Icon
+### Icon
 
 Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.com/ThaddeusJiang/sodaicons)
 
@@ -99,22 +119,26 @@ Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.
 
 ## Layout
 
-### ✅Divider
+### Divider
 
 [daisyUI](https://daisyui.com/components/divider/)
 
 - [ ] left and right align
 - [ ] [divider-solid divider-dotted divider-dashed divider-double](https://github.com/saadeghi/daisyui/issues/1163)
 
-
 ### Grid
+
 ### Layout
+
 ### Space
 
 ## Navigation
+
 ### Affix
+
 ### Breadcrumb
-### ✅Dropdown
+
+### Dropdown
 
 [@radix-ui/react-dropdown-menu](https://www.radix-ui.com/docs/primitives/components/dropdown-menu)
 
@@ -123,7 +147,8 @@ Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.
 [daisyUI](https://daisyui.com/components/menu/)
 
 ### PageHeader
-### ✅Pagination
+
+### Pagination
 
 [daisyUI btn-group](https://daisyui.com/components/pagination/)
 
@@ -134,8 +159,10 @@ Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.
 ## Data Entry
 
 ### AutoComplete
+
 ### Cascader
-### ✅Checkbox
+
+### Checkbox
 
 [daisyUI](https://daisyui.com/components/checkbox/)
 
@@ -144,17 +171,27 @@ Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.
 Recommend [HTML <input type="date">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
 
 ```html
-<input type="date" id="start" name="trip-start"
-       value="2018-07-22"
-       min="2018-01-01" max="2018-12-31">
+<input
+  type="date"
+  id="start"
+  name="trip-start"
+  value="2018-07-22"
+  min="2018-01-01"
+  max="2018-12-31"
+/>
 ```
 
 [HTML <input type="datetime-local">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
 
 ```html
-<input type="datetime-local" id="meeting-time"
-       name="meeting-time" value="2018-06-12T19:30"
-       min="2018-06-07T00:00" max="2018-06-14T00:00">
+<input
+  type="datetime-local"
+  id="meeting-time"
+  name="meeting-time"
+  value="2018-06-12T19:30"
+  min="2018-06-07T00:00"
+  max="2018-06-14T00:00"
+/>
 ```
 
 others
@@ -162,45 +199,58 @@ others
 [<input type="month">]()
 
 ### Form
-### ✅Input
+
+### Input
 
 [daisyUI](https://daisyui.com/components/input/)
 
 HTML native input should learn again ![html-input-types](html-input-types.png)
 
 ### InputNumber
+
 ### Mentions
-### ✅Radio
+
+### Radio
 
 Recommend [daisyUI](https://daisyui.com/components/radio/)
 
 ### Rate
-### ✅Select
+
+### Select
 
 [daisyUI](https://daisyui.com/components/select/)
 
+complex select and combobox recommend to use [react-select](https://github.com/jedwatson/react-select)
+
+[examples](./stories/Select.stories.tsx)
+
 ### Slider
-### ✅Switch
+
+### Switch
 
 Recommend [daisyUI Toggle](https://daisyui.com/components/toggle/)
 
 [daisyUI Swap](https://daisyui.com/components/swap/) is super cool, you should try it.
 
-### ✅TimePicker
+### TimePicker
 
 [HTML <input type="datetime-local">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/datetime-local)
 
 ```html
-<input type="datetime-local" id="meeting-time"
-       name="meeting-time" value="2018-06-12T19:30"
-       min="2018-06-07T00:00" max="2018-06-14T00:00">
+<input
+  type="datetime-local"
+  id="meeting-time"
+  name="meeting-time"
+  value="2018-06-12T19:30"
+  min="2018-06-07T00:00"
+  max="2018-06-14T00:00"
+/>
 ```
 
 [HTML <input type="time">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/time)
 
 ```html
-<input type="time" id="appt" name="appt"
-       min="09:00" max="18:00" required>
+<input type="time" id="appt" name="appt" min="09:00" max="18:00" required />
 ```
 
 ### ❌Transfer
@@ -208,11 +258,12 @@ Recommend [daisyUI Toggle](https://daisyui.com/components/toggle/)
 Never use this UI
 
 ### TreeSelect
+
 ### Upload
 
 ## Data Display
 
-### ✅Avatar
+### Avatar
 
 [daisyUI](https://daisyui.com/components/avatar/)
 
@@ -221,22 +272,38 @@ Never use this UI
 [daisyUI](https://daisyui.com/components/badge/)
 
 ### Calendar
+
 ### Card
+
 ### Carousel
+
 ### Collapse
+
 ### Comment
+
 ### Descriptions
+
 ### Empty
+
 ### Image
+
 ### List
+
 ### Popover
+
 ### Segmented
+
 ### Statistic
+
 ### Table
+
 ### Tabs
+
 ### Tag
+
 ### Timeline
-### ✅Tooltip
+
+### Tooltip
 
 We recommend [HTML tooltip](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/title)
 
@@ -259,11 +326,12 @@ We recommend [HTML tooltip](https://developer.mozilla.org/en-US/docs/Web/HTML/Gl
 [daisyUI](https://daisyui.com/components/alert/)
 
 ### Drawer
-### ✅Message
+
+### Message
 
 Recommend [react-hot-toast](https://github.com/timolins/react-hot-toast)
 
-### ✅Modal
+### Modal
 
 Recommend [Radix Alert Dialog](https://www.radix-ui.com/docs/primitives/components/alert-dialog) and [Radix Dialog](https://www.radix-ui.com/docs/primitives/components/dialog)
 
@@ -275,33 +343,40 @@ Recommend [Radix Alert Dialog](https://www.radix-ui.com/docs/primitives/componen
 
 KnowHow
 
--  `Radix Alert Dialog` for confirm
--  `Radix Dialog` for asynchronous form submission
+- `Radix Alert Dialog` for confirm
+- `Radix Dialog` for asynchronous form submission
 
 ### Notification
+
 ### Popconfirm
+
 ### Progress
+
 ### Result
+
 ### Skeleton
+
 ### Spin
 
 ## Other
 
 ### Anchor
+
 ### BackTop
+
 ### ConfigProvider
 
 ## Mockup
 
-### ✅Code
+### Code
 
 [daisyUI](https://daisyui.com/components/mockup-code/)
 
-### ✅Phone
+### Phone
 
 [daisyUI](https://daisyui.com/components/mockup-phone/)
 
-### ✅Window
+### Window
 
 [daisyUI](https://daisyui.com/components/mockup-window/)
 
