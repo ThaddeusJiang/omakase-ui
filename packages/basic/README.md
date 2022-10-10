@@ -381,4 +381,4 @@ KnowHow
 [daisyUI](https://daisyui.com/components/mockup-window/)
 
 BTW, we recommend to not mock up Phone and Window.
-Welcome to try [@omakase-ui/react-responsive-design-mode](https://www.npmjs.com/package/@omakase-ui/responsive-design-mode)
+Welcome to try [@omakase-ui/react-responsive-design-mode](https://www.npmjs.com/package/@omakase-ui/react-responsive-design-mode)

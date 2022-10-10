@@ -2,7 +2,7 @@ import classNames from "classnames";
 import React from "react";
 import { useState } from "react";
 
-import { ResponsiveDesignMode } from "@omakase-ui/responsive-design-mode";
+import { ResponsiveDesignMode } from "@omakase-ui/react-responsive-design-mode";
 
 const Page = () => {
   const [visible, setVisible] = useState(true);

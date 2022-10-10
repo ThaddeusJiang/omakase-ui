@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@omakase-ui/react-table": "*",
-    "@omakase-ui/responsive-design-mode": "*",
+    "@omakase-ui/react-responsive-design-mode": "*",
     "@omakase-ui/react-sortable-list": "*",
     "next": "12.2.2",
     "react": "18.2.0",

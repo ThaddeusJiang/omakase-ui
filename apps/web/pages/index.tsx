@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       url: "/react-sortable-list",
     },
     {
-      name: "@omakase-ui/responsive-design-mode",
+      name: "@omakase-ui/react-responsive-design-mode",
       url: "/responsive-design-mode",
     },
   ];

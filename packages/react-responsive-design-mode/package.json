@@ -1,5 +1,5 @@
 {
-  "name": "@omakase-ui/responsive-design-mode",
+  "name": "@omakase-ui/react-responsive-design-mode",
   "author": "Thaddeus Jiang",
   "version": "0.0.1",
   "license": "MIT",
@@ -12,8 +12,6 @@
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
-    "size": "size-limit",
-    "analyze": "size-limit --why",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -37,19 +35,8 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "size-limit": [
-    {
-      "path": "dist/responsive-design-mode.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/responsive-design-mode.esm.js",
-      "limit": "10 KB"
-    }
-  ],
   "devDependencies": {
     "@babel/core": "^7.17.9",
-    "@size-limit/preset-small-lib": "^7.0.8",
     "@storybook/addon-essentials": "^6.4.20",
     "@storybook/addon-info": "^5.3.21",
     "@storybook/addon-links": "^6.4.20",
@@ -71,7 +58,6 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-is": "^18.0.0",
-    "size-limit": "^7.0.8",
     "tailwindcss": "^3.0.24",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
