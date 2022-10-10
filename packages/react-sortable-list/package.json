@@ -3,12 +3,11 @@
   "author": "Thaddeus Jiang",
   "version": "0.0.1",
   "license": "MIT",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist"
+  },
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
@@ -34,7 +33,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/react-sortable-list.esm.js",
   "size-limit": [
     {
       "path": "dist/react-sortable-list.cjs.production.min.js",
@@ -73,7 +71,10 @@
     "tailwindcss": "^3.0.24",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "tsconfig": "*",
+    "tailwind-config": "*",
+    "eslint-config-custom": "*"
   },
   "dependencies": {
     "@dnd-kit/core": "^5.0.3",

@@ -1,14 +1,21 @@
 {
-  "name": "omakase-ui",
-  "version": "0.0.1",
-  "license": "MIT",
   "private": true,
   "workspaces": [
-    "examples/*",
-    "packages/*"
+    "packages/*",
+    "apps/*"
   ],
   "scripts": {
-    "next": "yarn --cwd examples/next-app dev"
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "packageManager": "yarn@3.2.1"
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-custom": "*",
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.11",
+    "turbo": "^1.5.5"
+  }
 }

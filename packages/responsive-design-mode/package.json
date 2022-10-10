@@ -17,12 +17,11 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist"
+  },
   "peerDependencies": {
     "react": ">=16"
   },
@@ -37,7 +36,6 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "module": "dist/responsive-design-mode.esm.js",
   "size-limit": [
     {
       "path": "dist/responsive-design-mode.cjs.production.min.js",
@@ -76,7 +74,10 @@
     "tailwindcss": "^3.0.24",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.3",
+    "tsconfig": "*",
+    "tailwind-config": "*",
+    "eslint-config-custom": "*"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"

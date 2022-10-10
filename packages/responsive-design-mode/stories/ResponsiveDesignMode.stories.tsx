@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import React from 'react';
 import { useState } from 'react';
 
 import ResponsiveDesignMode from '../src';
@@ -28,9 +27,9 @@ export const Standard = () => {
                 'grid grid-cols-1 gap-4': device === 'Mobile',
               })}
             >
-              <div className="w-full bg-purple-400 btn-square btn"></div>
-              <div className="w-full bg-purple-400 btn-square btn"></div>
-              <div className="w-full bg-purple-400 btn-square btn"></div>
+              <div className="btn-square btn w-full bg-purple-400"></div>
+              <div className="btn-square btn w-full bg-purple-400"></div>
+              <div className="btn-square btn w-full bg-purple-400"></div>
             </div>
           </div>
         )}
