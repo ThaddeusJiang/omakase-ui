@@ -3,13 +3,13 @@
   <a href="https://www.npmjs.com/package/@omakase-ui/react-responsive-design-mode" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@omakase-ui/react-responsive-design-mode.svg">
   </a>
-  <a href="https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/responsive-design-mode#readme" target="_blank">
+  <a href="https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/react-responsive-design-mode#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/ThaddeusJiang/omakase-ui/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
-  <a href="https://github.com/ThaddeusJiang/omakase-ui/blob/main/packages/responsive-design-mode/LICENSE" target="_blank">
+  <a href="https://github.com/ThaddeusJiang/omakase-ui/blob/main/packages/react-responsive-design-mode/LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/ThaddeusJiang/omakase-ui" />
   </a>
   <a href="https://twitter.com/ThaddeusJiang" target="_blank">
@@ -17,7 +17,7 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/responsive-design-mode#readme)
+### 🏠 [Homepage](https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/react-responsive-design-mode#readme)
 
 ## Features
 
@@ -92,7 +92,7 @@ yarn test
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ThaddeusJiang/omakase-ui/packages/responsive-design-mode/issues). You can also take a look at the [contributing guide](https://github.com/ThaddeusJiang/omakase-ui/packages/responsive-design-mode/blob/main/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode/issues). You can also take a look at the [contributing guide](https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode/blob/main/CONTRIBUTING.md).
 
 ## Show your support
 
@@ -101,7 +101,7 @@ Give a ⭐️ if this project helped you!
 ## 📝 License
 
 Copyright © 2022 [Thaddeus Jiang](https://github.com/ThaddeusJiang).<br />
-This project is [MIT](https://github.com/ThaddeusJiang/omakase-ui/blob/main/packages/responsive-design-mode/LICENSE) licensed.
+This project is [MIT](https://github.com/ThaddeusJiang/omakase-ui/blob/main/packages/react-responsive-design-mode/LICENSE) licensed.
 
 ---
 

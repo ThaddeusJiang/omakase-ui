@@ -69,13 +69,13 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/responsive-design-mode#readme",
+  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/react-responsive-design-mode#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThaddeusJiang/omakase-ui/packages/responsive-design-mode.git"
+    "url": "git+https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode.git"
   },
   "bugs": {
-    "url": "https://github.com/ThaddeusJiang/omakase-ui/packages/responsive-design-mode/issues"
+    "url": "https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode/issues"
   },
   "keywords": [
     "Responsive Design Mode",
