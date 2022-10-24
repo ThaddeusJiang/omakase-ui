@@ -1,7 +1,7 @@
 {
   "name": "@omakase-ui/react-table",
   "author": "Thaddeus Jiang",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
@@ -21,7 +21,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist"
+    ".": "./dist",
+    "./dist/": "./dist/"
   },
   "peerDependencies": {
     "react": ">=16"

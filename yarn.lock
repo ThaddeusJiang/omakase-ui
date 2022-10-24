@@ -1846,14 +1846,6 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@omakase-ui/react-table@*":
-  version "0.1.4"
-  resolved "https://registry.yarnpkg.com/@omakase-ui/react-table/-/react-table-0.1.4.tgz#57e663e9ab11e34f65f1b6adec308541ab7fd9f2"
-  integrity sha512-ikbZqN6T+u2WOasXIj2koZR38UXVfYEpYoQa3QSVL7/SmR1Rtsbxv5v1e7NboxdS7EbGl9h30Shv0g5d5cbEiA==
-  dependencies:
-    classnames "^2.3.1"
-    react-table "^7.7.0"
-
 "@pmmmwh/react-refresh-webpack-plugin@^0.5.3":
   version "0.5.8"
   resolved "https://registry.yarnpkg.com/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.5.8.tgz#da3383761e2c0c440610819f3204769022a38d12"
