@@ -7,7 +7,7 @@ const ReactTableExample = () => {
   const columns = useMemo(() => MockReactTableColumns, []);
   return (
     <>
-      <h1 className=" text-2xl font-semibold text-center">
+      <h1 className=" text-center text-2xl font-semibold">
         react-table example
       </h1>
       <section className=" container mx-auto">

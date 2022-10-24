@@ -1,16 +1,17 @@
 {
   "name": "@omakase-ui/react-table",
   "author": "Thaddeus Jiang",
-  "version": "0.1.5-rc.3",
+  "version": "0.1.7",
   "license": "MIT",
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && yarn build-tailwind",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/react-table.css --minify"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -20,7 +21,8 @@
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist"
+    ".": "./dist",
+    "./dist/": "./dist/"
   },
   "peerDependencies": {
     "react": ">=16"

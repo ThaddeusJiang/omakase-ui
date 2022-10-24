@@ -6,8 +6,8 @@ React table component of Omakase UI.
 
 ## features
 
-- [x] out of box react table component
-- [x] resize column size of table
+- [x] out of box react table component with beautiful style.
+- [x] resize column size of table.
 
 ## Install
 
@@ -15,14 +15,13 @@ React table component of Omakase UI.
 yarn add @omakase-ui/react-table
 ```
 
-## Development
+## Usage
 
-```
-yarn install
-```
+```ts
+import { DataTable } from '@omakase-ui/react-table';
 
-### Storybook
+import '@omakase-ui/react-table/dist/react-table.css';
 
-```bash
-yarn storybook
+// render
+<DataTable columns={columns} data={data} sort={['name', 'asc']} />;
 ```
