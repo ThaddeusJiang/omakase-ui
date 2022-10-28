@@ -3,7 +3,7 @@
   <a href="https://www.npmjs.com/package/@omakase-ui/react-responsive-design-mode" target="_blank">
     <img alt="Version" src="https://img.shields.io/npm/v/@omakase-ui/react-responsive-design-mode.svg">
   </a>
-  <a href="https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/react-responsive-design-mode#readme" target="_blank">
+  <a href="https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-responsive-design-mode#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/ThaddeusJiang/omakase-ui/graphs/commit-activity" target="_blank">
@@ -17,7 +17,7 @@
   </a>
 </p>
 
-### 🏠 [Homepage](https://github.com/ThaddeusJiang/omakase-ui/tree/main/packages/react-responsive-design-mode#readme)
+### 🏠 [Homepage](https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-responsive-design-mode#readme)
 
 ## Features
 

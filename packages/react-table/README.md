@@ -20,7 +20,7 @@ yarn add @omakase-ui/react-table
 ```ts
 import { DataTable } from '@omakase-ui/react-table';
 
-import '@omakase-ui/react-table/dist/react-table.css';
+import '@omakase-ui/react-table/dist/index.css';
 
 // render
 <DataTable columns={columns} data={data} sort={['name', 'asc']} />;

@@ -18,6 +18,14 @@ const Home: NextPage = () => {
       name: "@omakase-ui/react-responsive-design-mode",
       url: "/responsive-design-mode",
     },
+    {
+      name: "@omakase-ui/react-baseui",
+      url: "/react-baseui",
+    },
+    {
+      name: "react-select",
+      url: "/react-select",
+    },
   ];
 
   return (

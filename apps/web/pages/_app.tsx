@@ -1,5 +1,7 @@
 import "../styles/globals.css";
-import "@omakase-ui/react-table/dist/react-table.css";
+// TODO: 其实我不想 export CSS，最好可以导出 tailwind utility classes，然后在项目中自己引入，通过 tailwind JIT 来生成 CSS
+import "@omakase-ui/react-table/dist/index.css";
+import "@omakase-ui/react-baseui/dist/index.css";
 import type { AppProps } from "next/app";
 import Link from "next/link";
 import React from "react";

@@ -11,7 +11,7 @@
     "prepare": "yarn build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/react-table.css --minify"
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/index.css --minify"
   },
   "dependencies": {
     "classnames": "^2.3.1",
@@ -71,6 +71,14 @@
     "tsconfig": "*",
     "tailwind-config": "*",
     "eslint-config-custom": "*"
+  },
+  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-table#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaddeusJiang/omakase-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-table/issues"
   },
   "keywords": [
     "React.js",

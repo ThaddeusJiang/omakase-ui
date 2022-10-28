@@ -1,6 +1,14 @@
-# @omakase-ui/basic
+# @omakase-ui/react-baseui
 
-- [@omakase-ui/basic](#omakase-uibasic)
+> You don't need to install this npm if you have lots of time to code and want to build the unique UI.
+
+What is Omakase UI baseUI?
+
+1. without big external dependencies, like: react-table, downshift.
+2. beautiful styling.
+3. out of box utils of UIUX.
+
+- [@omakase-ui/react-baseui](#omakase-uireact-baseui)
   - [Common](#common)
     - [Button](#button)
     - [Icon](#icon)
@@ -109,9 +117,9 @@ Recommend [heroicons v1](https://heroicons.com/) and [sodaicons](https://github.
 
 > sodaicons supports Highlight colorful icons, just like:
 
-![sodaicons-outline-icons](sodaicons-outline-icons.png)
+![sodaicons-outline-icons](./docs/assets/sodaicons-outline-icons.png)
 
-![sodaicons-solid-icons.png](sodaicons-solid-icons.png)
+![sodaicons-solid-icons.png](./docs/assets/sodaicons-solid-icons.png)
 
 > We recommend make all icons as button, apply :hover, :focus and other styles.
 
@@ -204,7 +212,7 @@ others
 
 [daisyUI](https://daisyui.com/components/input/)
 
-HTML native input should learn again ![html-input-types](html-input-types.png)
+HTML native input should learn again ![html-input-types](./docs/assets/html-input-types.png)
 
 ### InputNumber
 
@@ -309,8 +317,11 @@ We recommend [HTML tooltip](https://developer.mozilla.org/en-US/docs/Web/HTML/Gl
 
 ```html
 <div title="CoolTip">
+
   <p>Hovering here will show "CoolTip".</p>
+
   <p title="">Hovering here will show nothing.</p>
+
 </div>
 ```
 
