@@ -19,17 +19,18 @@
     "react-select": "^5.5.7"
   },
   "devDependencies": {
+    "@omakase-ui/tsconfig": "*",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.7",
+    "daisyui": "^2.37.0",
     "eslint": "8.19.0",
     "eslint-config-custom": "*",
     "eslint-config-next": "12.2.2",
     "postcss": "^8.4.14",
     "tailwind-config": "*",
     "tailwindcss": "^3.1.5",
-    "tsconfig": "*",
     "typescript": "4.7.4"
   }
 }

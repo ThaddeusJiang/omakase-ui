@@ -49,14 +49,21 @@ const Home: NextPage = () => {
           Lots of out of box advanced Components for ToB applications.
         </p>
 
-        <div className={styles.grid}>
+        <div className="grid gap-4 grid-cols-1  sm:grid-cols-2 lg:grid-cols-4">
           {components.map(({ name, url }) => (
-            <Link href={url} key={name}>
-              <a className={styles.card}>
-                <h2>{name} &rarr;</h2>
-                <p>Find in-depth information about Next.js features and API.</p>
-              </a>
-            </Link>
+            <div
+              className="card bg-base-100 shadow-xl h-full hover:shadow-2xl hover:shadow-blue-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "
+              key={name}
+            >
+              <Link href={url}>
+                <a className=" card-body">
+                  <h2 className="card-title">{name}</h2>
+                  <p>
+                    Find in-depth information about Next.js features and API.
+                  </p>
+                </a>
+              </Link>
+            </div>
           ))}
         </div>
       </main>
