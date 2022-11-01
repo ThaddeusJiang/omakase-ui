@@ -18,6 +18,14 @@ const Home: NextPage = () => {
       name: "@omakase-ui/react-responsive-design-mode",
       url: "/responsive-design-mode",
     },
+    {
+      name: "@omakase-ui/react-simple-components",
+      url: "/react-simple-components",
+    },
+    {
+      name: "react-select",
+      url: "/react-select",
+    },
   ];
 
   return (
@@ -41,14 +49,21 @@ const Home: NextPage = () => {
           Lots of out of box advanced Components for ToB applications.
         </p>
 
-        <div className={styles.grid}>
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {components.map(({ name, url }) => (
-            <Link href={url} key={name}>
-              <a className={styles.card}>
-                <h2>{name} &rarr;</h2>
-                <p>Find in-depth information about Next.js features and API.</p>
-              </a>
-            </Link>
+            <div
+              className="card bg-base-100 h-full shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500 "
+              key={name}
+            >
+              <Link href={url}>
+                <a className=" card-body">
+                  <h2 className="card-title">{name}</h2>
+                  <p>
+                    Find in-depth information about Next.js features and API.
+                  </p>
+                </a>
+              </Link>
+            </div>
           ))}
         </div>
       </main>

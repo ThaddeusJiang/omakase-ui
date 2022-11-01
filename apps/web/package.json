@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "web",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,25 +9,28 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@omakase-ui/react-table": "*",
+    "@omakase-ui/react-simple-components": "*",
     "@omakase-ui/react-responsive-design-mode": "*",
     "@omakase-ui/react-sortable-list": "*",
+    "@omakase-ui/react-table": "*",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-select": "^5.5.7"
   },
   "devDependencies": {
+    "@omakase-ui/config-ts": "*",
     "@types/node": "18.0.3",
     "@types/react": "18.0.15",
     "@types/react-dom": "18.0.6",
     "autoprefixer": "^10.4.7",
+    "daisyui": "^2.37.0",
     "eslint": "8.19.0",
+    "@omakase-ui/config-eslint": "*",
     "eslint-config-next": "12.2.2",
     "postcss": "^8.4.14",
+    "@omakase-ui/config-tailwind": "*",
     "tailwindcss": "^3.1.5",
-    "typescript": "4.7.4",
-    "tsconfig": "*",
-    "tailwind-config": "*",
-    "eslint-config-custom": "*"
+    "typescript": "4.7.4"
   }
 }

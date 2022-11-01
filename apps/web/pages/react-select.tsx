@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+
 import React from "react";
 import Select, {
   components,
@@ -13,6 +15,7 @@ const MemberSelectInputOption = (props: OptionProps) => {
     <components.Option {...props}>
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
+          alt="jiang.jifa"
           src="https://avatars.githubusercontent.com/u/17308201?v=4"
           style={{ width: 30, height: 30, borderRadius: "50%" }}
         />
@@ -30,6 +33,7 @@ const MemberSelectMultiValueLabel = (props: MultiValueGenericProps) => {
     <components.MultiValueLabel {...props}>
       <div style={{ display: "flex", alignItems: "center" }}>
         <img
+          alt="jiang.jifa"
           src="https://avatars.githubusercontent.com/u/17308201?v=4"
           style={{ width: 30, height: 30, borderRadius: "50%" }}
         />
@@ -46,6 +50,7 @@ const MemberSelectSingleValue = ({ children, ...props }: SingleValueProps) => (
   <components.SingleValue {...props}>
     <div style={{ display: "flex", alignItems: "center" }}>
       <img
+        alt="jiang.jifa"
         src="https://avatars.githubusercontent.com/u/17308201?v=4"
         style={{ width: 30, height: 30, borderRadius: "50%" }}
       />
@@ -129,6 +134,44 @@ export const CreatableTagInput = () => {
   return <CreatableSelect isClearable options={options} isMulti />;
 };
 
-export default {
-  title: "components/Select",
+const Page = () => {
+  const router = useRouter();
+  const query = router.query;
+  const currentPage = query.page ? parseInt(query.page as string) : 1;
+
+  const onChangePage = (page) => {
+    router.push({
+      query: { page },
+    });
+  };
+
+  return (
+    <>
+      <h1 className=" text-center text-2xl font-semibold">
+        react-select example
+      </h1>
+
+      <section className=" container mx-auto">
+        <h2 className="text-xl font-semibold">Select</h2>
+        <Standard />
+      </section>
+
+      <section className=" container mx-auto">
+        <h2 className="text-xl font-semibold">SingleMemberSelectInput</h2>
+        <SingleMemberSelectInput />
+      </section>
+
+      <section className=" container mx-auto">
+        <h2 className="text-xl font-semibold">MultiMemberSelectInput</h2>
+        <MultiMemberSelectInput />
+      </section>
+
+      <section className=" container mx-auto">
+        <h2 className="text-xl font-semibold">CreatableTagInput</h2>
+        <CreatableTagInput />
+      </section>
+    </>
+  );
 };
+
+export default Page;

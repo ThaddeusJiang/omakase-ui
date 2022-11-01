@@ -1,28 +1,31 @@
 {
-  "name": "@omakase-ui/react-responsive-design-mode",
+  "name": "@omakase-ui/react-simple-components",
   "author": "Thaddeus Jiang",
   "version": "0.0.1",
   "license": "MIT",
-  "dependencies": {
-    "@heroicons/react": "^1.0.6"
-  },
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
+    "build": "tsdx build && yarn build-tailwind",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
+    "prepare": "yarn build",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/index.css --minify"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist"
+    ".": "./dist",
+    "./dist/": "./dist/"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": ">=16",
+    "react-hook-form": "^7.38.0"
   },
   "husky": {
     "hooks": {
@@ -52,34 +55,33 @@
     "autoprefixer": "^10.4.4",
     "babel-loader": "^8.2.4",
     "cssnano": "^5.1.7",
+    "daisyui": "^2.13.6",
+    "@omakase-ui/config-eslint": "*",
     "husky": "^7.0.4",
     "jest-environment-jsdom-sixteen": "^2.0.0",
     "postcss": "^8.4.12",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-is": "^18.0.0",
-    "tailwindcss": "^3.0.24",
+    "rollup-plugin-postcss": "^4.0.2",
+    "@omakase-ui/config-tailwind": "*",
+    "tailwindcss": "^3.0.23",
+    "@omakase-ui/config-ts": "*",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.6.3",
-    "@omakase-ui/config-ts": "*",
-    "@omakase-ui/config-tailwind": "*",
-    "@omakase-ui/config-eslint": "*"
+    "typescript": "^4.6.3"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  },
-  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-responsive-design-mode#readme",
+  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-simple-components#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode.git"
+    "url": "git+https://github.com/ThaddeusJiang/omakase-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/ThaddeusJiang/omakase-ui/packages/react-responsive-design-mode/issues"
+    "url": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-simple-components/issues"
   },
   "keywords": [
-    "Responsive Design Mode",
-    "Omakase UI",
-    "React"
+    "React.js",
+    "Pagination Component",
+    "TyeScript"
   ]
 }
