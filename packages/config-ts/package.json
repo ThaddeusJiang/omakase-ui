@@ -1,5 +1,5 @@
 {
-  "name": "@omakase-ui/tsconfig",
+  "name": "@omakase-ui/config-ts",
   "version": "0.0.1",
   "license": "MIT",
   "publishConfig": {

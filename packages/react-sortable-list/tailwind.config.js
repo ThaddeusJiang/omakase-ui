@@ -1,9 +1,3 @@
-module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './stories/*'],
-  content: [],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-};
+const config = require('@omakase-ui/config-tailwind/react-library.js');
+
+module.exports = config;

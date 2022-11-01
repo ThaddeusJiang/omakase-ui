@@ -1,4 +1,4 @@
-# @omakase-ui/react-baseui
+# @omakase-ui/react-simple-components
 
 > You don't need to install this npm if you have lots of time to code and want to build the unique UI.
 
@@ -8,7 +8,7 @@ What is Omakase UI baseUI?
 2. beautiful styling.
 3. out of box utils of UIUX.
 
-- [@omakase-ui/react-baseui](#omakase-uireact-baseui)
+- [@omakase-ui/react-simple-components](#omakase-uireact-simple-components)
   - [Common](#common)
     - [Button](#button)
     - [Icon](#icon)
@@ -317,11 +317,9 @@ We recommend [HTML tooltip](https://developer.mozilla.org/en-US/docs/Web/HTML/Gl
 
 ```html
 <div title="CoolTip">
-
   <p>Hovering here will show "CoolTip".</p>
 
   <p title="">Hovering here will show nothing.</p>
-
 </div>
 ```
 

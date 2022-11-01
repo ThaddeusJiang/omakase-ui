@@ -1,6 +1,5 @@
-const colors = require("tailwindcss/colors");
-
 module.exports = {
+  mode: "jit",
   content: [
     // app content
     `src/**/*.{js,ts,jsx,tsx}`,

@@ -1,4 +1,4 @@
-import { Pagination } from "@omakase-ui/react-baseui";
+import { Pagination } from "@omakase-ui/react-simple-components";
 import { useRouter } from "next/router";
 
 const Page = () => {
@@ -15,7 +15,7 @@ const Page = () => {
   return (
     <>
       <h1 className=" text-center text-2xl font-semibold">
-        react-baseui example
+        react-simple-components example
       </h1>
       <section className=" container mx-auto">
         <h2 className="text-xl font-semibold">Pagination</h2>

@@ -1947,7 +1947,7 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@omakase-ui/react-baseui@*":
+"@omakase-ui/react-simple-components@*":
   version "0.0.1-rc.1"
   dependencies:
     classnames "^2.3.1"

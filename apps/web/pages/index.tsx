@@ -19,8 +19,8 @@ const Home: NextPage = () => {
       url: "/responsive-design-mode",
     },
     {
-      name: "@omakase-ui/react-baseui",
-      url: "/react-baseui",
+      name: "@omakase-ui/react-simple-components",
+      url: "/react-simple-components",
     },
     {
       name: "react-select",
@@ -49,10 +49,10 @@ const Home: NextPage = () => {
           Lots of out of box advanced Components for ToB applications.
         </p>
 
-        <div className="grid gap-4 grid-cols-1  sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {components.map(({ name, url }) => (
             <div
-              className="card bg-base-100 shadow-xl h-full hover:shadow-2xl hover:shadow-blue-500 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 "
+              className="card bg-base-100 h-full shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500 "
               key={name}
             >
               <Link href={url}>
