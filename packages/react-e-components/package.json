@@ -1,5 +1,5 @@
 {
-  "name": "@omakase-ui/react-simple-components",
+  "name": "@omakase-ui/react-e-components",
   "author": "Thaddeus Jiang",
   "version": "0.0.1",
   "license": "MIT",
@@ -14,7 +14,12 @@
     "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/index.css --minify"
   },
   "dependencies": {
-    "classnames": "^2.3.1"
+    "@hookform/resolvers": "^2.9.10",
+    "classnames": "^2.3.1",
+    "i18next": "^22.0.5",
+    "react-hook-form": "^7.39.4",
+    "react-i18next": "^12.0.0",
+    "yup": "^0.32.11"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -40,6 +45,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
+    "@hookform/devtools": "^4.2.3",
     "@omakase-ui/config-eslint": "*",
     "@omakase-ui/config-tailwind": "*",
     "@omakase-ui/config-ts": "*",
@@ -71,17 +77,17 @@
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
   },
-  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-simple-components#readme",
+  "homepage": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-e-components#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ThaddeusJiang/omakase-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-simple-components/issues"
+    "url": "https://github.com/ThaddeusJiang/omakase-ui/tree/dev/packages/react-e-components/issues"
   },
   "keywords": [
     "React.js",
-    "Pagination Component",
-    "TyeScript"
+    "TyeScript",
+    "Enterprise Components"
   ]
 }

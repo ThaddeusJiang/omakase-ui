@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@omakase-ui/react-simple-components": "*",
+    "@omakase-ui/react-e-components": "*",
     "@omakase-ui/react-responsive-design-mode": "*",
     "@omakase-ui/react-sortable-list": "*",
     "@omakase-ui/react-table": "*",

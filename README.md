@@ -1,6 +1,5 @@
-# Omakase(おまかせ) UI 👋
+# Omakase(おまかせ)(おまかせ) UI 👋
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
 [![Twitter: ThaddeusJiang](https://img.shields.io/twitter/follow/ThaddeusJiang.svg?style=social)](https://twitter.com/ThaddeusJiang)
 
 > A lots of out of box Omakase(おまかせ) components and configurations for pragmatic developers.
@@ -9,11 +8,12 @@
 
 - [x] [@omakase-ui/react-responsive-design-mode](./packages/react-responsive-design-mode/README.md)
 - [ ] [@omakase-ui/react-simple-components](./packages/react-simple-components/README.md)
+- [ ] [@omakase-ui/react-e-components](./packages/react-e-components/README.md)
 - [x] [@omakase-ui/react-sortable-list](./packages/react-sortable-list/README.md)
 - [x] [@omakase-ui/react-table](./packages/react-table/README.md)
+- [ ] [react-sortable-tree]()
 - [ ] [react-organization-simulator]()
 - [ ] [react-form-maker]()
-- [ ] [react-sortable-tree]()
 
 ## Omakase Configurations
 
@@ -27,7 +27,7 @@
 ## Develop
 
 ```
-yarn workspace @omakase-ui/react-responsive-design-mode storybook
+yarn dev
 ```
 
 ## Author

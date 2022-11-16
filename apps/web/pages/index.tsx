@@ -7,20 +7,24 @@ import styles from "../styles/Home.module.css";
 const Home: NextPage = () => {
   const components = [
     {
-      name: "@omakase-ui/react-table",
+      name: "react-table",
       url: "/react-table",
     },
     {
-      name: "@omakase-ui/react-sortable-list",
+      name: "react-sortable-list",
       url: "/react-sortable-list",
     },
     {
-      name: "@omakase-ui/react-responsive-design-mode",
+      name: "react-responsive-design-mode",
       url: "/responsive-design-mode",
     },
     {
-      name: "@omakase-ui/react-simple-components",
+      name: "react-simple-components",
       url: "/react-simple-components",
+    },
+    {
+      name: "react-e-components",
+      url: "/e-components/AddressForm",
     },
     {
       name: "react-select",
@@ -34,7 +38,7 @@ const Home: NextPage = () => {
         <title>Omakase UI</title>
         <meta
           name="description"
-          content="Provide lots of out of box advanced components for ToB applications."
+          content="Provide lots of out of box Advanced Components for ToB applications."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -46,21 +50,21 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Lots of out of box advanced Components for ToB applications.
+          Lots of out of box Advanced Components for ToB applications.
         </p>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {components.map(({ name, url }) => (
             <div
-              className="card bg-base-100 h-full shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500 "
+              className="card h-full bg-base-100 shadow-xl transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500 "
               key={name}
             >
               <Link href={url}>
                 <a className=" card-body">
                   <h2 className="card-title">{name}</h2>
-                  <p>
+                  {/* <p>
                     Find in-depth information about Next.js features and API.
-                  </p>
+                  </p> */}
                 </a>
               </Link>
             </div>
@@ -70,13 +74,16 @@ const Home: NextPage = () => {
 
       <footer className={styles.footer}>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://github.com/ThaddeusJiang/omakase-ui"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{" "}
           <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          </span>
+          <span className="ml-4">
+            ❤️ <span className={styles.logo}>ThaddeusJiang</span>
           </span>
         </a>
       </footer>

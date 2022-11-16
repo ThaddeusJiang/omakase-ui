@@ -1,5 +1,7 @@
 # @omakase-ui/react-simple-components
 
+[![Twitter: ThaddeusJiang](https://img.shields.io/twitter/follow/ThaddeusJiang.svg?style=social)](https://twitter.com/ThaddeusJiang)
+
 > You don't need to install this npm if you have lots of time to code and want to build the unique UI.
 
 What is Omakase UI baseUI?

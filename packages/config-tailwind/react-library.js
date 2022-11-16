@@ -7,5 +7,8 @@ module.exports = {
     // "../../packages/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["light"],
+  },
 };
