@@ -18,7 +18,7 @@ export const SectionLoadingWithoutMessage: React.VFC = () => (
   </div>
 );
 export const SectionLoadingWithMessage: React.VFC = () => (
-  <div className="relative h-96 w-96">
+  <div className="relative h-80 w-80">
     <SectionLoading message="It takes long time!" />
   </div>
 );

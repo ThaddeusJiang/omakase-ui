@@ -13,7 +13,7 @@ on:
 jobs:
   publish-chromatic:
     # Operating System
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
     # Job steps
     steps:
       # 👇 Version 2 of the action
