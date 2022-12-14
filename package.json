@@ -12,13 +12,14 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
     "size": "size-limit",
     "analyze": "size-limit --why",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6007",
+    "prepare": "yarn build",
+    "build": "tsdx build && yarn build-tailwind",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -o ./dist/index.css --minify",
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
@@ -102,8 +103,9 @@
     "url": "https://github.com/ThaddeusJiang/omakase-ui/issues"
   },
   "keywords": [
-    "React",
-    "Starter",
-    "Components"
+    "React.js",
+    "TyeScript",
+    "Components",
+    "Pagination Component"
   ]
 }
